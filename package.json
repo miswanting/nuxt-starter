@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-starter",
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.6.5",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "scripts": {
+    "commit": "cz",
+    "bump": "bumpp -r --no-commit --no-tag --no-push",
+    "changelog": "conventional-changelog -p angular",
+    "bump:commit": "echo PLS Choose `as-is` && bumpp -a --no-push",
+    "push:tags": "git push --tags",
+    "clean": "pnpm --filter \"./packages/*\" run clean && rimraf -g ./**/node_modules",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.4.1",
+    "bumpp": "^10.3.2",
+    "commitizen": "^4.3.1",
+    "conventional-changelog": "^7.1.1",
+    "conventional-changelog-angular": "^8.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.39.1",
+    "esno": "^4.8.0",
+    "rimraf": "^6.1.2",
+    "taze": "^19.9.2"
+  }
+}
